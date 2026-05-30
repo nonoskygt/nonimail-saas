@@ -1,0 +1,22 @@
+# Secretos y datos sensibles — NUNCA subir
+.env
+.env.*
+!.env.example
+
+# Datos (DB con tokens cifrados, resultados de scan)
+data/
+*.sqlite
+*.sqlite-*
+
+# Dependencias y logs
+node_modules/
+logs/
+*.log
+server-out.log
+server-err.log
+
+# Artefactos de automatización / temporales / docs internos (pueden tener secretos)
+.playwright-mcp/
+scripts/
+docs/
+*.tmp

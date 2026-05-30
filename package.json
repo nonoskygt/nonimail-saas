@@ -1,0 +1,28 @@
+{
+  "name": "nonimail-saas",
+  "version": "0.1.0",
+  "description": "NoniMail — limpieza de correo con IA local. Conectores Gmail, Outlook (Graph) e IMAP sobre una abstracción común.",
+  "author": "Danilo Estuardo Gonzalez Rizzo",
+  "license": "MIT",
+  "type": "module",
+  "private": false,
+  "repository": { "type": "git", "url": "https://github.com/nonoskygt/nonimail-saas.git" },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@azure/msal-node": "^2.16.2",
+    "@microsoft/microsoft-graph-client": "^3.0.7",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "googleapis": "^144.0.0",
+    "imapflow": "^1.0.171",
+    "jsonwebtoken": "^9.0.2",
+    "mailparser": "^3.7.2"
+  }
+}
